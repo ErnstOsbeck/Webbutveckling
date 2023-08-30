@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(110, 151, 113);
+}
+
+p{
+    color: white;
+    font-size: 15px;
+}
+
+h1, h2, p{
+    text-align: center;
+}
+
+h1, h2{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 22px;
+}
+
+.altP{
+    text-align: right;
+}
