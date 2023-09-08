@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(110, 151, 113);
+	background-color: rgb(24, 24, 24);
 }
 
 p {
@@ -28,8 +28,7 @@ h2 {
 	color: green;
 }
 
-.tankar,
-h3 {
+.tankar{
 	text-align: right;
 }
 
@@ -46,4 +45,52 @@ a {
 .teknikum {
 	max-width: 50%;
 	max-height: auto;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 0;
+	grid-template-rows: 1fr 2fr 2fr;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"header"
+	"nav"
+	"main"
+	"footer";
+}
+
+header{
+	background-color: green;
+
+}
+
+nav{
+
+}
+
+nav > ul{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav li{
+	list-style-type: none;
+	text-align: center;
+	display: grid;
+	align-items: stretch;
+	align-self: stretch;
+	color:white
+
+}
+
+header{
+	grid-area: header;
+}
+
+main{
+	grid-area: main;
+}
+
+footer{
+	grid-area: footer;
 }
